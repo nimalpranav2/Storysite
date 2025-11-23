@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Story</title>
+</head>
+<body>
+    <h2>Add Story</h2>
+
+    <form action="/add" method="POST">
+        <input type="hidden" name="password" value="{{ password }}">
+
+        <input type="text" name="name" placeholder="Name"><br><br>
+        <input type="text" name="part" placeholder="Part"><br><br>
+
+        <textarea name="story" rows="8" cols="40" placeholder="Write your story here..."></textarea><br><br>
+
+        <button type="submit">Save</button>
+    </form>
+
+    <br>
+    <a href="/list">View All Stories</a>
+</body>
+</html>
